@@ -71,7 +71,9 @@
             iconAnchor: [22, 22]
         });
 
-        var markers = L.markerClusterGroup();
+        var markers = L.markerClusterGroup({
+            disableClusteringAtZoom: 11
+        });
 
         // add peaks
         var peaksGeoJSONUrl = './data/peaks.geojson';
